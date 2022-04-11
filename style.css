@@ -67,6 +67,7 @@ body {
     display: flex;
     padding: 1em;
     width: 100%;
+    font-family: 'Poppins';
 }
 
 .form-container input:focus{
@@ -98,3 +99,9 @@ body {
     margin-block: 10em;
     margin-inline: 8em;
 }
+
+@media screen and ( max-width: 600px ) {
+    .grid{
+        flex-direction: column;
+    }
+}   
