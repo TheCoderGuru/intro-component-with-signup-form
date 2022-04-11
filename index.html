@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- displays site properly based on user's device -->
 
     <link
@@ -20,7 +23,7 @@
   <body>
     <main>
       <div class="grid">
-        <div>
+        <div class="first">
           <h1 class="title">Learn to code by watching others</h1>
           <p class="description">
             See how experienced developers solve problems in real-time. Watching
@@ -29,17 +32,19 @@
           </p>
         </div>
         <div>
-          <p class="grid__banner">Try it free 7 days then $20/mo. thereafter</p>
-          <form action="">
-            <input type="text" />
-            <input type="text" />
-            <input type="email" />
-            <input type="password" />
-            <button class="grid__button" type="submit">Claim your free trial</button>
-            <p>
-              By clicking the button, you are agreeing to our Terms and Services
-            </p>
-          </form>
+          <div class="form-component">
+            <p class="grid__banner">Try it free 7 days then $20/mo. thereafter</p>
+            <form name="myForm" class="form-container" action="#" onsubmit="validateForm()" method="post" required>
+              <input name="fname" type="text" />
+              <input type="text" />
+              <input type="email" />
+              <input type="password" />
+              <button class="grid__button" type="submit">Claim your free trial</button>
+              <p class="grid__terms">
+                By clicking the button, you are agreeing to our Terms and Services
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </main>
