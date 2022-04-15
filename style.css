@@ -1,9 +1,9 @@
 :root {
-  --primary-red: hsl(0, 100%, 74%);
-  --primary-green: hsl(154, 59%, 51%);
-  --accent-blue: hsl(248, 32%, 49%);
-  --neutral-dark-blue: hsl(249, 10%, 26%);
-  --grayish-blue: hsl(246, 25%, 77%);
+  --primary-red-400: hsl(0, 100%, 74%);
+  --primary-green-500: hsl(154, 59%, 51%);
+  --accent-blue-600: hsl(248, 32%, 49%);
+  --neutral-dark-blue-700: hsl(249, 10%, 26%);
+  --grayish-blue-300: hsl(246, 25%, 77%);
 }
 
 * {
@@ -15,7 +15,7 @@
 body {
   background-image: url(./images/bg-intro-desktop.png);
   min-height: 100vh;
-  background-color: var(--primary-red);
+  background-color: var(--primary-red-400);
 }
 
 .grid {
@@ -33,7 +33,8 @@ body {
     color: white;
     font-weight: 700;
     font-family: 'Poppins';
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
+    font-size: min(2.5em, 2.4em); 
     width: 48%;
     line-height: 1.1;
 }
@@ -46,7 +47,7 @@ body {
 }
 
 .grid__banner{
-    background-color: var(--accent-blue);
+    background-color: var(--accent-blue-600);
     padding-inline: 8em;
     padding-block: 1em;
     border-radius: .5em;
@@ -74,13 +75,13 @@ body {
 
 .form-container input:focus{
     outline: none;
-    border: 1px solid var(--accent-blue);
+    border: 1px solid var(--accent-blue-600);
     border-radius: .5em;
 }
 
 span{
     font-weight: 500;
-    color: var(--grayish-blue);
+    color: var(--grayish-blue-300);
 }
 .grid__button{
     padding: .8em;
@@ -90,7 +91,7 @@ span{
     width: 100%;
     font-family: 'Poppins';
     color: white;
-    background-color: var(--primary-green);
+    background-color: var(--primary-green-500);
     outline: none;
     border: none;
 }
@@ -110,9 +111,46 @@ span{
 @media screen and ( max-width: 600px ) {
     .grid{
         flex-direction: column;
+        gap: 0;
     }
+
+    .title{
+        width: 100%;
+    }
+
+    .first{
+        margin-block: 5em;
+        margin-inline: 0;
+        margin-left: 5em;
+    }
+
+    .description{
+        width: 78%;
+        text-align: center;
+    }
+
+    .form-component{
+        margin-block: 2em;
+        margin-inline: 5.6em;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .grid__banner{
+        padding-inline: 1em;
+        padding-block: 2em;
+        width: 70%;
+    }
+
+    .grid__button{
+        border-radius: .3em;
+        box-shadow: 2px 2px 2px 2px solid black;
+    }
+
+
 } 
 
+
 .bold{
-    color: var(--primary-red);
+    color: var(--primary-red-400);
 }
