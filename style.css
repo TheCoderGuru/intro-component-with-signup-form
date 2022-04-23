@@ -24,133 +24,138 @@ body {
   gap: 1em;
 }
 
-.first{
-    margin-block: 15em;  
-    margin-inline: 8em;
+.first {
+  margin-block: 15em;
+  margin-inline: 8em;
 }
 
-.title{
-    color: white;
-    font-weight: 700;
-    font-family: 'Poppins';
-    /* font-size: 2.5em; */
-    font-size: min(2.5em, 2.4em); 
-    width: 48%;
-    line-height: 1.1;
+.title {
+  color: white;
+  font-weight: 700;
+  font-family: "Poppins";
+  /* font-size: 2.5em; */
+  font-size: min(2.5em, 2.4em);
+  width: 48%;
+  line-height: 1.1;
 }
 
-.description{
-    font-family: 'Poppins';
-    color: white;
-    margin-top: 1em;
-    width: 58%;
+.description {
+  font-family: "Poppins";
+  color: white;
+  margin-top: 1em;
+  width: 58%;
 }
 
-.grid__banner{
-    background-color: var(--accent-blue-600);
-    padding-inline: 8em;
-    padding-block: 1em;
-    border-radius: .5em;
-    width: max-content;
-    font-family: 'Poppins';
-    font-size: .9em;
-    color: white;
+.grid__banner {
+  background-color: var(--accent-blue-600);
+  padding-inline: 8em;
+  padding-block: 1em;
+  border-radius: 0.5em;
+  width: max-content;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  color: white;
 }
-.form-container{
-    margin-block: 1em;
-    background-color: white;  
-    padding: 2em;
+.form-container {
+  margin-block: 1em;
+  background-color: white;
+  padding: 2em;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.form-container input {
+  display: flex;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.form-container input::placeholder {
+  font-size: 1em;
+}
+.form-container input:focus {
+  outline: none;
+  border: 1px solid var(--accent-blue-600);
+  border-radius: 0.5em;
+}
+
+span {
+  font-weight: 500;
+  color: var(--grayish-blue-300);
+}
+.grid__button {
+  padding: 0.8em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 1em;
+  width: 100%;
+  font-family: "Poppins";
+  color: white;
+  background-color: var(--primary-green-500);
+  outline: none;
+  border-radius: 0.5em;
+  box-shadow: -6px 5px 15px -4px rgba(0, 0, 0, 0.75);
+  border: none;
+}
+
+.grid__terms {
+  margin-top: 1em;
+  font-size: 0.8em;
+  font-family: "Poppins";
+  margin-bottom: 1em;
+  font-weight: 500;
+  color: var(--grayish-blue-300);
+}
+
+.form-component {
+  margin-block: 10em;
+  margin-inline: 8em;
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .title {
     width: 100%;
-    border-radius: .5rem;
+  }
+
+  .first {
+    margin-block: 5em;
+    margin-inline: 0;
+    margin-left: 5em;
+  }
+
+  .description {
+    width: 78%;
+    text-align: center;
+  }
+
+  .form-component {
+    margin-block: 2em;
+    margin-inline: 5.6em;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .grid__banner {
+    padding-inline: 1em;
+    padding-block: 2em;
+    width: 90%;
+    text-align: center;
+  }
+
+  .grid__button {
+    border-radius: 0.3em;
+    box-shadow: 2px 2px 2px 2px solid black;
+  }
 }
 
-.form-container input{
-    display: flex;
-    padding: 1em;
-    width: 100%;
-    border: none;
-    font-weight: 500;
-    font-family: 'Poppins';
-}
-
-.form-container input:focus{
-    outline: none;
-    border: 1px solid var(--accent-blue-600);
-    border-radius: .5em;
-}
-
-span{
-    font-weight: 500;
-    color: var(--grayish-blue-300);
-}
-.grid__button{
-    padding: .8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-top: 1em;
-    width: 100%;
-    font-family: 'Poppins';
-    color: white;
-    background-color: var(--primary-green-500);
-    outline: none;
-    border: none;
-}
-
-.grid__terms{
-    margin-top: 1em;
-    font-size: .8em;
-    font-family: 'Poppins';
-    font-weight: 500;
-}
-
-.form-component{
-    margin-block: 10em;
-    margin-inline: 8em;
-}
-
-@media screen and ( max-width: 600px ) {
-    .grid{
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .title{
-        width: 100%;
-    }
-
-    .first{
-        margin-block: 5em;
-        margin-inline: 0;
-        margin-left: 5em;
-    }
-
-    .description{
-        width: 78%;
-        text-align: center;
-    }
-
-    .form-component{
-        margin-block: 2em;
-        margin-inline: 5.6em;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .grid__banner{
-        padding-inline: 1em;
-        padding-block: 2em;
-        width: 70%;
-    }
-
-    .grid__button{
-        border-radius: .3em;
-        box-shadow: 2px 2px 2px 2px solid black;
-    }
-
-
-} 
-
-
-.bold{
-    color: var(--primary-red-400);
+.bold {
+  color: var(--primary-red-400);
 }
