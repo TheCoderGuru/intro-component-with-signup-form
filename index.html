@@ -44,23 +44,19 @@
               name="myForm"
               class="form-container"
               action="index.html"
-              onsubmit="validateForm()"
               method="post"
               required
             >
               <div class="fields">
-                <input name="fname" type="text" placeholder="First Name" />
-                <div class="error">
-                  <img
-                    src="images/icon-error.svg"
-                    class="error-img"
-                    alt="error-image"
-                  />
-                  <p class="error-msg">The first name field cannot be empty</p>
-                </div>
-                <input type="text" placeholder="Last Name" />
-                <input type="email" placeholder="Email Address" />
-                <input type="password" placeholder="Password" />
+                <input
+                  class="field"
+                  name="fname"
+                  type="text"
+                  placeholder="First Name"
+                />
+                <input class="field" type="text" placeholder="Last Name" />
+                <input class="field" type="email" placeholder="Email Address" />
+                <input class="field" type="password" placeholder="Password" />
               </div>
               <button onlick="" class="grid__button" type="submit">
                 Claim your free trial
