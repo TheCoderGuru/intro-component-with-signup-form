@@ -159,3 +159,7 @@ span {
 .bold {
   color: var(--primary-red-400);
 }
+
+.error{
+  display: none;
+}
