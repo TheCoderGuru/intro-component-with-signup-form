@@ -10,7 +10,7 @@ forms.addEventListener("submit", (e) => {
 
   field.addEventListener("submit", () => {
     // If the input does not have a value then add the error message.
-    if (!field.value) {
+    if (!field.value || field.value == '') {
       document.classList.add("error");
       console.log("Error detected");
     }

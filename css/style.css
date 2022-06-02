@@ -97,7 +97,7 @@ span {
   background-color: var(--primary-green-500);
   outline: none;
   border-radius: 0.5em;
-  box-shadow: -6px 5px 15px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 5px -4px rgba(0, 0, 0, 0.75);
   border: none;
 }
 
@@ -160,6 +160,17 @@ span {
   color: var(--primary-red-400);
 }
 
-.error{
+.error {
   border: 1px solid red;
+}
+
+@media only screen and (min-width: 1024px) {
+  .title {
+    width: auto;
+  }
+
+  .description {
+    padding-inline-end: 19em;
+    width: 100%;
+  }
 }
